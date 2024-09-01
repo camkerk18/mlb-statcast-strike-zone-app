@@ -9,4 +9,4 @@ The data used for this application is statcast pitch-by-pitch data collected for
 
 Authors: Cameron Kerkemeyer, Zach Larson
 
-Data Source: “Statcast Search.” Baseballsavant.Com, baseballsavant.mlb.com/statcast_search. Accessed 1 May 2024.
+Data Source: “Statcast Search.” Baseballsavant.com, baseballsavant.mlb.com/statcast_search. Accessed 1 May 2024.
