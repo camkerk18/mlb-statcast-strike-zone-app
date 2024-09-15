@@ -106,7 +106,7 @@ server <- function(input, output) {
     reduced_hist() %>%
       filter(pitch==input$I)
   })
-  
+
   plot <- reactive({
     outcomes <- unique(reduced_pitch()$type)
     
@@ -169,8 +169,8 @@ server <- function(input, output) {
   
   output$C <- renderUI({
     formatted_text <- HTML(paste(
-      
-      "
+    
+"
 <h3>Project Description</h3><br>
 <p>
 The first part of this shiny app is a strike zone visual that categorizes pitches based on outcome. 
@@ -195,7 +195,7 @@ We further filtered this data to include only the 100 pitchers with the most pit
 
 
 "
-      
+    
     ))
     
     return(formatted_text)
@@ -206,7 +206,7 @@ We further filtered this data to include only the 100 pitchers with the most pit
     start <- input$B
     end <- input$C
     pitchtype <- input$D
-    
+
     formatted_text <- HTML(paste("<h3>Pitcher:</h3>",
                                  pitcher,"<br>",
                                  "<h3>Start Date:</h3>",
@@ -221,4 +221,6 @@ We further filtered this data to include only the 100 pitchers with the most pit
 
 app = shinyApp(ui = ui, server = server)
 app
+
+#################################################
 
